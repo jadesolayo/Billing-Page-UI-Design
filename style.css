@@ -232,33 +232,33 @@ h4 {
   background: #ee4d38;
   margin-top: 95px;
   border-radius: 20px;
-  color: #ffffff;padding-left:20px 
-  ;
+  color: #ffffff;
+  padding-left: 20px;
 }
-.right-box > p{
+.right-box > p {
   padding: 20px 0 0 0;
   font-size: 14px;
 }
-.right-box > h3{
+.right-box > h3 {
   padding-top: 10px;
   font-weight: 500;
 }
-#renew{
+#renew {
   padding-top: 0px;
   font-size: 12px;
 }
-.right-box > button{
-   border-radius: 6px;
+.right-box > button {
+  border-radius: 6px;
   border: 1px solid #ffffff;
   cursor: pointer;
   outline: none;
   background: none;
   padding: 5px 10px 5px 10px;
   color: white;
-margin-top: 20px;
+  margin-top: 20px;
 }
-.right-box > button:hover{
+.right-box > button:hover {
   color: #ee4d38;
   background: #ffffff;
-  transition: .8s ease;
+  transition: 0.8s ease;
 }
