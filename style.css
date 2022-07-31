@@ -77,9 +77,22 @@ h4 {
   display: flex;
   margin-left: 35px;
   margin-top: 47px;
+  position: relative;
 }
-.icon-cont:hover {
-  text-decoration: underline;
+
+.icon-cont:hover::before,
+.icon-cont2:hover::before,
+.icon-cont3:hover::before {
+  content: "";
+  width: 6px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #ee4d38;
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -10px;
+  transition: 0.5s ease-in;
+  cursor: pointer;
 }
 #gen-icon,
 #sec-icon,
@@ -101,17 +114,12 @@ h4 {
   margin-top: 30px;
   position: relative;
 }
-.icon-cont2:hover {
-  text-decoration: underline;
-}
+
 .icon-cont3 {
   display: flex;
   margin-left: 35px;
   margin-top: 155px;
   position: relative;
-}
-.icon-cont3:hover {
-  text-decoration: underline;
 }
 .middle {
   margin-top: 40px;
