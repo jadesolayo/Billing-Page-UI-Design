@@ -1,17 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Billing Page UI Design</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="left">   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="big-container">
+      <div class="container">
+        <div class="left"></div>
+
+        <div class="right">
+          <nav>
+            <section class="profile">
+              <img src="./image.png" alt="profile-img" />
+              <div class="profile-details">
+                <h4>Ildiko Gaspar</h4>
+                <p id="username">@igaspar</p>
+              </div>
+            </section>
+
+            <div class="icon-cont">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-stack"
+                viewBox="0 0 16 16"
+                id="gen-icon"
+              >
+                <path
+                  d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z"
+                />
+                <path
+                  d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z"
+                />
+              </svg>
+              <p class="icon-text"><a href="#">General</a></p>
+            </div>
+
+            <div class="icon-cont2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-shield-lock"
+                viewBox="0 0 16 16"
+                id="sec-icon"
+              >
+                <path
+                  d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"
+                />
+                <path
+                  d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"
+                />
+              </svg>
+              <p class="icon-text"><a href="#">Password</a></p>
+            </div>
+
+            <div class="icon-cont2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-envelope"
+                viewBox="0 0 16 16"
+                id="env-icon"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                />
+              </svg>
+              <p class="icon-text"><a href="#">Invitations</a></p>
+            </div>
+
+            <div class="icon-cont2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-cash-coin"
+                viewBox="0 0 16 16"
+                id="cash-icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"
+                />
+                <path
+                  d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"
+                />
+                <path
+                  d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"
+                />
+                <path
+                  d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"
+                />
+              </svg>
+              <p class="icon-text">
+                <a href="#">Billing</a>
+              </p>
+            </div>
+            <div class="icon-cont2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-grid-3x3-gap"
+                viewBox="0 0 16 16"
+                id="gen-icon"
+              >
+                <path
+                  d="M4 2v2H2V2h2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zm0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1zM9 2v2H7V2h2zm5 0v2h-2V2h2zM4 7v2H2V7h2zm5 0v2H7V7h2zm5 0h-2v2h2V7zM4 12v2H2v-2h2zm5 0v2H7v-2h2zm5 0v2h-2v-2h2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1h-2z"
+                />
+              </svg>
+              <p class="icon-text">
+                <a href="#">Apps</a>
+              </p>
+            </div>
+            <div class="icon-cont3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                class="bi bi-box-arrow-right"
+                viewBox="0 0 16 16"
+                id="log-icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"
+                />
+              </svg>
+              <p class="icon-text">
+                <a href="#">Log Out</a>
+              </p>
+            </div>
+          </nav>
+
+          <section class="middle">
+            <h2>Billing</h2>
+            <h3>Order History</h3>
+            <p>Manage billing information and view receipts</p>
+            <div class="table-cont">
+              <div class="t-head">
+                <p>Date</p>
+                <p>Type</p>
+                <p style="margin-right: 25px">Receipt</p>
+              </div>
+              <div class="t-body">
+                <p>Oct. 21, 2021</p>
+                <p>Pro Annual</p>
+                <button class="dwl">
+                  <p></p>
+                  Download
+                </button>
+              </div>
+              <div class="t-body pro">
+                <p>Aug. 21, 2021</p>
+                <p>Pro Portfolio</p>
+                <button class="dwl"><p>Download</p></button>
+              </div>
+              <div class="t-body">
+                <p>July 21, 2021</p>
+                <p>Sponsored Posts</p>
+                <button class="dwl">Download</button>
+              </div>
+              <div class="t-body">
+                <p>July 21, 2021</p>
+                <p>Sponsored Posts</p>
+                <button class="dwl">Download</button>
+              </div>
+            </div>
+            <a href="#" class="load-more-link">Load More</a>
+            <h4 class="payment">Payment Method</h4>
+            <p id="bill">Manage billing information and view receipts</p>
+            <div class="visa">
+              <img src="./visa.png" alt="visa-logo" id="visa-logo" />
+              <p>Visa ending in 2255</p>
+              <button>Remove</button>
+            </div>
+          </section>
+
+          <div class="right-box">
+            <p>Your plan</p>
+            <h3>Pro Manual</h3>
+            <p id="renew">Renews on  Nov. 2021</p>
+            <button>Cancel Subscription</button>
+          </div>
         </div>
-        <div class="right"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
